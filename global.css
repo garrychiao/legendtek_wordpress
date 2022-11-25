@@ -1,0 +1,198 @@
+body {
+	overflow-x: hidden;
+}
+
+.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon {
+	padding-top: 6px;
+}
+.elementor-widget .elementor-icon-list-item, .elementor-widget .elementor-icon-list-item a {
+	align-items: flex-start;
+}
+
+.__container {
+	max-width: 1320px;
+}
+
+.hidden {
+	display: none;
+}
+
+.__primary_color {
+	color: var(--e-global-color-astglobalcolor0);
+}
+
+.__no_margin {
+	margin: unset !important;
+}
+
+.__full_height {
+	height: 100%;
+}
+
+.__full_height>.elementor-widget-container {
+	height: 100%;
+}
+
+/* this section is for product category main page, product blocks */
+.__product_block {
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.__product_block_PP {
+	background-image: url(https://legendtek.tech/wp-content/uploads/2022/09/3_%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9-0-1.jpg);
+	padding: 10% 5% 95%;
+}
+
+.__product_block_REP {
+	background-image: url(http://legendtek.tech/wp-content/uploads/2022/09/3_產品介紹-0-2.jpg);
+	padding: 20% 5% 22%;
+}
+
+.__product_block_SC {
+	background-image: url(https://legendtek.tech/wp-content/uploads/2022/10/Legendtek_home_functional_textile.jpg);
+	padding: 45.7% 5% 10%;
+}
+
+
+/* this is for single category page */
+.__products_sidebar_container {
+	background-color: var(--e-global-color-astglobalcolor0);
+	padding: 0;
+	display: flex;
+	min-height: 75vh;
+	height: 100%;
+}
+
+.__products_content::-webkit-scrollbar {
+	display: none;
+}
+
+.__products_sidebar {
+	width: 100%;
+	position: sticky;
+	top: 50px;
+	height: 65vh;
+	font-family: var(--e-global-typography-text-font-family), Sans-serif;
+}
+
+.__products_sidebar_item {
+	padding: 25px;
+	text-align: center;
+}
+
+.__products_sidebar_item:hover {
+	background: rgb(78, 171, 211);
+	background: linear-gradient(135deg, rgba(78, 171, 211, 1) 0%, rgba(235, 235, 235, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.__products_sidebar_item>h4,
+h5 {
+	color: white;
+}
+
+/* this is for single product block */
+.__single_product_container {
+	font-family: var(--e-global-typography-text-font-family), Sans-serif;
+	min-height: 80vh;
+}
+
+.__single_product_container>hr {
+	border: 0.5px solid #f0f0f0;
+	margin: 25px 0;
+}
+
+.__product_item_title {
+	cursor: pointer;
+}
+
+.__product_item_title > * > h3:hover {
+	color: var(--e-global-color-astglobalcolor0);
+}
+
+.__single_product_image {
+	margin-bottom: 50px;
+	text-align: right;
+}
+
+.__single_product_title>h3,
+h6 {
+	font-weight: 800;
+}
+
+.__single_product_navigation {
+	color: var(--wp--preset--color--cyan-bluish-gray);
+}
+
+.__single_product_navigation:hover {
+	color: var(--e-global-color-astglobalcolor0);
+}
+
+.__custom_list_item {
+	margin-bottom: 12px;
+}
+
+.__custom_list_item::marker {
+	color: var(--e-global-color-astglobalcolor0);
+	/* Change the color */
+	font-weight: bold;
+	/* If you want it to be bold */
+}
+
+.premium-title-container .premium-title-header {
+	padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+	.__single_product_container {
+		margin-bottom: 100px;
+	}
+
+	.__single_product_image {
+		margin-left: 10%;
+		width: 80%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	html {
+		-ms-overflow-style: none;
+		/* for Internet Explorer, Edge */
+		scrollbar-width: none;
+		/* for Firefox */
+		overflow-y: scroll;
+	}
+
+	.eael-accordion-content {
+		padding: unset !important;
+	}
+
+	.__products_sidebar_item {
+		text-align: left;
+		padding: unset;
+		background: #f0f0f0;
+		padding: 10px;
+	}
+
+	.__products_sidebar_item:hover {
+		background: white;
+	}
+
+	.__products_sidebar_item>.__scroll_anchor>h6 {
+		color: var(--e-global-color-astglobalcolor0);
+	}
+
+	.__single_product_container {
+		margin-top: 50px;
+		min-height: 100vh;
+	}
+
+	.__single_product_image {
+		width: 100%;
+	}
+
+}

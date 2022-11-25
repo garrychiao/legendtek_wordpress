@@ -1,0 +1,194 @@
+
+<script>
+    const product_list = {
+        "precision-polishing-powder": {
+            title: '精密拋光粉',
+            image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+            subtitle: '適用於高精度光學玻璃的拋光',
+            content: `精密拋光粉與傳統拋光粉相比，它不污染環境，可以很容易地從被污染的材料中去除。它之所以是更有效的拋光劑，是因為它可以同時利用化學分解和機械摩擦來拋光玻璃，因此具有用量少、拋光速度快、拋光效率高，使用壽命長，光潔度高等優點。<br>
+精密拋光粉通常被用在高精度光學玻璃的拋光上，而這種玻璃又常被用作隱形雷達搜索鏡和監視衛星攝像機鏡頭等設備中的光學鏡頭。隨著各類高精度光學玻璃的應用，光學玻璃拋光對拋光粉的要求非常高。而我公司採用的濕磨方式，生產出穩定性強、切削率高、表面質量好、使用壽命長、懸浮性強等優點，可廣泛應用於不同的拋光領域。`
+        },
+        "cerium-oxide-polishing-powder": {
+            title: '氧化鈰拋光粉',
+            image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+            subtitle: '適用於工業產品的拋光',
+            content: `氧化鈰拋光粉廣泛用於玻璃拋光，具有切削力強、拋光時間短、使用壽命長、拋光精度高等優點。 氧化鈰拋光粉按氧化鈰含量分為低鈰、中鈰和高鈰拋光粉，其切削力和使用壽命也由低到高。 由於鈰稀土拋光粉具有較好的化學和物理性能，已廣泛應用於工業產品的拋光，如各種光學玻璃器件、電視顯像管、光學玻璃、示波器管、平板玻璃、半導體晶片的拋光和金屬精密產品。`
+        },
+        "CMP-polishing-liquid": {
+            title: 'CMP拋光液',
+            image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_CMP_Polishing_Liquid.jpg',
+            subtitle: '適用於半導體的拋光',
+            content: `CMP拋光液是一種化學機械拋光，它作為一種可以在大規模集成電路製造過程中提供全局平面化的新技術，在未來的高科技中將發揮越來越重要的作用。近年來，隨著超精密光學元件等新領域的發展，對高純度、超細稀土氧化鈰拋光材料的要求逐漸提高，用量也迅速增加。近年來，隨著IC用光掩模基板、高密度記錄用磁盤基板等新領域的發展，開發了超精密光學部件。因此，開發和研究優質的稀土氧化鈰磨粒以及制備同樣的氧化鈰拋光液具有廣闊的應用前景。`
+        },
+        "TFT-thinning-powder": {
+            title: 'TFT減薄粉',
+            image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+            subtitle: '適用於顯示器的拋光',
+            content: `TFT減薄粉是用於TFT-LCD中的，它是目前應用較廣泛的平板顯示器之一。隨著科技的發展，台式液晶顯示器、筆記本液晶顯示器、手持式液晶顯示設備越來越流行，化學減薄後修復玻璃表面的重要方法也在不斷發展進步。拋光的主要原理是用拋光粉和純水形成拋光液作為加工介質。在一定的壓力下，它在拋光盤和機器面板之間流動，機器作相對運動，使硬質磨料直接接觸面板表面。切割面板表面，以達到平滑玻璃表面的目的。隨著市場對基板的需求越來越多，減薄行業及相關面板廠商對TFT減薄粉的良率要求越來越嚴格。而且，由於面板廠商的面板材質不同等原因，在如此嚴格的良率要求下，現階段減薄行業的減薄企業大多無法實現一次性蝕刻工藝。為此，無論是減薄產品的來料，還是其蝕刻的後道工序，都無處不需研拋光處理。`
+        },
+        "rare-earth-polishing-materials": {
+            title: '客製化拋光材料',
+            image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+            subtitle: '適用於光學玻璃的拋光',
+            content: `稀土拋光材料有拋光效率高、拋光質量好、粒度均勻、硬度適中\使用壽命長、清潔環保等特點，被廣泛應用於光學玻璃、液晶玻璃基板和觸摸屏玻璃蓋板的拋光。尤其是近年來，隨著液晶顯示行業的興起和壯大，拋光材料得到了快速發展。事物的發展都有兩面性，稀土拋光材料行業的發展也不例外，有發展的困境，也必然蘊含發展的機遇。`
+        },
+        "optical-polishing": {
+            title: '光學拋光',
+            image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+            subtitle: '適用於光學元件的拋光',
+            content: `光學拋光方法有熱流法、回蝕法、旋轉玻璃法、電子環繞共振法、低壓CVD、選擇性沈積、沈積-蝕刻-沈積、等離子增強CVD等，這些技術已經用於材料平面化技術的開發。 由於這些技術都屬於材料的局部平面化技術，為了實現全局平面化，使用拋光粉作為化學機械拋光技術逐漸開始發展。<br>
+近年來，隨著航天技術、光電技術、原子能技術、激光技術等前沿技術的快速發展，對光學元件的相關性能要求越來越高。在上述高精密科技領域，光學元件應用廣泛，但光學元件的表面質量要求較高。因此，光學元件的超精密加工是一個挑戰。在光學元件的加工工藝中，拋光是光學元件加工過程中非常關鍵的一步，光學拋光可以消除光學元件的表面划痕和表面損傷，提高光學元件的表面質量。`
+        },
+    }
+
+
+    $('.__single_product_container').hide();
+
+    const isMobile = $(window).width() < 768
+    // handling breadcrumbs
+    const categoryTitle = '特殊粉材';
+    const categoryLink = 'rare-earth-products';
+    
+    $( document ).ready(function() {
+        // inserting product description to hidden fields, for translatepress to detect strings
+        const product_list = getProductListOrder();
+        $('#__hidden_translation').html(product_list.map(i => `<p>${i.content}</p>`));
+
+        const breadcrumbs = `
+            <a href="../products/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${categoryTitle}`
+        const breadcrumbsMobile = `
+            <a href="../${categoryLink}/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${categoryTitle}`
+
+        $("#__product_breadcrumbs").html(isMobile ? breadcrumbsMobile : breadcrumbs);
+
+        $('.__product_item_title').click(function() {
+            window.location.href = this.id;
+        })
+        
+        checkHash();
+
+    });
+
+    $(window).on('hashchange', function() {
+        checkHash();
+    });
+
+    function checkHash () {
+
+        const hash_string = window.location.hash.substring(1);
+        const product = hash_string;
+
+        console.log(product);
+        // console.log(product_list[category]!= undefined);
+        
+
+        if (product && product_list[product]) {
+            ShowProduct(product);
+        } else if (product_list[product] != undefined) {
+            FilterProduct(product);
+        } else {
+            FilterProduct('all');
+        }
+
+        $(window).scrollTop(0);
+
+    }
+
+    function FilterProduct (product) {
+        console.log('filtering product ' + product);
+        // hiding single product content
+
+        const isMobile = $(window).width() < 768
+        console.log(`is mobile ${isMobile}`)
+
+        $('.__single_product_container').hide();
+        // display default page
+        if (product == 'all') {
+            $('.__product_item').show();
+        } else if (!isMobile) { // if desktop, hide product intro 
+            $('.__product_item').hide();
+            $('.__'+product).fadeIn();
+        } else { // if mobile, keep product intro, scroll top product
+            $('.__product_item').fadeIn();
+            // console.log('mobile scrolling')
+            // console.log($('.__'+product).offset().top)
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $('.__'+product).offset().top - 10
+            }, 100);
+        }
+    }
+
+    function ShowProduct (product) {
+        // console.log('showing products')
+        $('.__single_product_container').hide();
+        const product_detail = product_list[product];
+        console.log(product_detail);
+
+        $('.__product_item').hide();
+
+        // binding product data
+        $('#__single_product_title').html(product_detail.title);
+        $('#__single_product_subtitle').html(product_detail.subtitle);
+        $('#__single_product_content').html(product_detail.content);
+        $("#__single_product_image").attr("src", product_detail.image);
+        
+        if (!isMobile) {
+            const breadcrumbsHTML = `
+            <a href="../products/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            <a href="../${categoryLink}/">${categoryTitle}</a>
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${product_detail.title}`
+            
+            $("#__product_breadcrumbs").html(breadcrumbsHTML);
+        }
+
+        $('.__single_product_container').fadeIn();
+
+        const orders = getProductListOrder();
+        const index = orders.map(i => i.key).indexOf(product);
+        // console.log(index)
+        if (index !== 0) {
+            $('#__single_product-previous').html(`<a class="__single_product_navigation" href="#${orders[index - 1].key}"><i aria-hidden="true" style="vertical-align: middle; font-size: larger;" class="arrow_triangle-left"></i> ${orders[index - 1].title}</a>`);
+        } else {
+            $('#__single_product-previous').html(``);
+        }
+        if (index !== orders.length - 1) {
+            $('#__single_product-next').html(`<a class="__single_product_navigation" href="#${orders[index + 1].key}">${orders[index + 1].title} <i aria-hidden="true" style="vertical-align: middle; font-size: larger;" class="arrow_triangle-right"></i> </a>`);
+        } else {
+            $('#__single_product-next').html(``);
+        }
+
+        // scroll to content
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#__single_product_container").offset().top - 80
+        }, 100);
+        
+    }
+
+    function getProductListOrder () {
+        return Object.keys(product_list).map((i) => ({
+            key: i,
+            title: product_list[i].title || '',
+            content: product_list[i].content || '',
+        }));
+    }
+    console.log(getProductListOrder()) 
+</script>
+
+
+
+<!-- 
+
+<script>
+    $(".__scroll_anchor").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#__products_main_content").offset().top
+        }, 100);
+        console.log('scroll')
+    });
+</script> -->

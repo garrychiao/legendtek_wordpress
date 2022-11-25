@@ -1,0 +1,316 @@
+
+<script>
+    const product_list = {
+        cerox26: {
+            'Cerox2610': {
+                title: 'Cerox® 2610',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於拋光輪、鏡片、水晶等的高性能拋光',
+                content: 'Cerox® 2610是一款經典的傳統拋光粉產品，主要用於拋光輪、鏡片、水晶、光學等傳統領域的拋光，產品粒度適中，切削率高，適應性廣。'
+            },
+            'Cerox2620': {
+                title: 'Cerox® 2620',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於蓋板玻璃，硬盤玻璃，觸摸屏，液晶顯示器等的高性能拋光',
+                content: 'Cerox® 2620是針對手機蓋板玻璃量身定制的一款產品，產品粒徑範圍窄、大顆粒控制嚴格、懸浮性能好，廣泛應用於蓋板玻璃，硬盤玻璃，觸摸屏，液晶顯示器等的高性能拋光。'
+            },
+            'Cerox2650': {
+                title: 'Cerox® 2650',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+                subtitle: '適用於手機蓋板玻璃、光學玻璃等的拋光',
+                content: 'Cerox 系列多個型號產品，它們具有出色的拋光表現性能，完全滿足不同客戶的精密拋光需求。'
+            },
+            'Cerox2663': {
+                title: 'Cerox® 2663',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於液晶減薄，硬盤玻璃，蓋板玻璃等的高性能拋光',
+                content: 'Cerox® 2663是一款經典的拋光粉產品，粒度小，大顆粒少，應用範圍比較廣泛，尤其適合液晶玻璃減薄的領域。'
+            },
+            'Cerox2618': {
+                title: 'Cerox® 2618',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+                subtitle: '適用於蓋板玻璃，硬盤玻璃，觸摸屏，光學玻璃等的高性能拋光',
+                content: 'Cerox® 2618是在 Cerox® 2620基礎上提升了切削率，為各類光學玻璃量身定制的一款產品，產品粒徑範圍窄、大顆粒控制嚴格、懸浮性能好，廣泛應用於蓋板玻璃，硬盤玻璃，觸摸屏，光學玻璃等的高性能拋光。'
+            },
+            'Cerox2665': {
+                title: 'Cerox® 2665',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+                subtitle: '適用於光學玻璃、液晶顯示器蓋板等的高性能拋光',
+                content: 'Cerox® 2665是在 2663的基礎上研發的一款新產品，粒徑增大，大顆粒控制嚴格，在有效控制划痕的同時，實現了切削率和壽命的大幅提升，適用於各類拋光，有效節省客戶的生產成本。'
+            },
+        },
+        cerox28: {
+            'Cerox2815': {
+                title: 'Cerox® 2815',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於硬盤玻璃，光掩膜，LCD 液晶顯示器，精密光學玻璃等的高性能精密拋光',
+                content: 'Cerox® 2815是一款經典高端產品，具有出色的拋光表面性能，完全滿足不同客戶的精密拋光需求，質量控制和一致性獲得廣泛認可。'
+            },
+            'Cerox2822': {
+                title: 'Cerox® 2822',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於硬盤玻璃，LCD 液晶顯示器，精密光學玻璃等的高性能拋光',
+                content: 'Cerox® 2822是一款經典高端產品，粒度適中，大顆粒少，適應於對切削率要求較高的高端拋光領域，表面質量優良，質量一致性和穩定性佳。'
+            },
+            'Cerox2855': {
+                title: 'Cerox® 2855',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於 LCD 液晶顯示器玻璃，硬盤玻璃，觸摸屏等的高性能精密拋光',
+                content: 'Cerox® 2855是 2815的簡化版，採用更加經濟的生產工藝，在成本降低的同時維持了優良的拋光表現性能，切削率和壽命方面還有所提升，可以提供給客戶不同的選擇。'
+            },
+            'Cerox2875': {
+                title: 'Cerox® 2875',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+                subtitle: '適用於精密光學玻璃，精密液晶顯示玻璃基板等的高性能精密拋光',
+                content: 'Cerox 系列多個型號產品，它們具有出色的拋光表現性能，完全滿足不同客戶的精密拋光需求。 Cerox® 2875是 Cerox® 2815的升級版，在 Cerox® 2815的基礎上將產品切削率、壽命、表面性能等進一步的提升。'
+            },
+            'Cerox2885': {
+                title: 'Cerox® 2885',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+                subtitle: '適用於硬盤玻璃，觸摸屏，液晶顯示器等的高性能精密拋光',
+                content: 'Cerox® 2885是我公司的一款粒度較細的高端產品，具有出色的拋光表現性能，完全滿足不同客戶的精密拋光需求，質量控制和一致性獲得廣泛認可。'
+            },
+            'Cerox2895': {
+                title: 'Cerox® 2895',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_w.jpg',
+                subtitle: '適用於液晶玻璃，硬盤玻璃，觸摸屏等的高性能精密拋光',
+                content: 'Cerox® 2895是專門為了提高切削率和壽命而設計的一款新產品，繼承了 2815優良的表面性能，同時工藝創新後壽命和切削率有所提高，懸浮性和分散性也得到改進。'
+            },
+            'Cerox2810': {
+                title: 'Cerox® 2810',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於精密光學玻璃，液晶顯示器，玻璃硬盤等的高性能拋光',
+                content: 'Cerox® 2810 專為精密光學玻璃拋光開發，使用先進的工藝，秉承 Cerox 良好的質量穩定性和一致性，粒徑適中，大顆粒控制嚴格，切削率高，拋光後表面質量好，無殘留，適應性廣。'
+            },
+            'Cerox2825': {
+                title: 'Cerox® 2825',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於精密光學玻璃，光掩膜，LCD 液晶顯示器等的高性能拋光',
+                content: 'Cerox® 2825 專為精密光學玻璃拋光開發，使用先進的工藝，秉承 Cerox 良好的質量穩定性和一致性，粒徑適中，大顆粒控制嚴格，切削率高，拋光後表面質量好，無殘留，適應性廣。'
+            },
+        },
+        cerox29: {
+            'Cerox2911': {
+                title: 'Cerox® 2911',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於精密光學玻璃，光學眼鏡片、平板玻璃、半導體晶片等的高性能拋光',
+                content: 'Cerox® 2911 專為精密光學玻璃拋光開發，使用先進的工藝，秉承 Cerox 良好的質量穩定性和一致性，粒徑適中，大顆粒控制嚴格，切削率高，拋光後表面質量好，無殘留，適應性廣。'
+            },
+            'Cerox2910': {
+                title: 'Cerox® 2910',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_w.jpg',
+                subtitle: '適用於精密光學玻璃，光學眼鏡片、平板玻璃、半導體晶片等的高性能拋光',
+                content: 'Cerox® 2910 專為精密光學玻璃拋光開發，使用先進的工藝，秉承 Cerox 良好的質量穩定性和一致性，粒徑適中，大顆粒控制嚴格，切削率高，拋光後表面質量好，無殘留，適應性廣。'
+            },
+        },
+        red: {
+            'RED2615': {
+                title: 'RED2615',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_r.jpg',
+                subtitle: '紅色精密拋光粉，適用於 TFT 減薄，精密光學，手機蓋板等',
+                content: '我公司新開發了紅粉系列，根據粒度大小共有三個型號，它們均具有出色的拋光性能，能夠滿足不同客戶的精密拋光需求。 這個系列的產品，生產工藝先進，秉承我公司一貫的質量穩定性，適應各種精密拋光，拋光性能優良，切削率高，並可根據客戶需求進行性能上的調整。'
+            },
+            'RED2655': {
+                title: 'RED2655',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bottle_r.jpg',
+                subtitle: '紅色精密拋光粉，適用於 TFT 減薄，精密光學，手機蓋板等',
+                content: '我公司新開發了紅粉系列，根據粒度大小共有三個型號，它們均具有出色的拋光性能，能夠滿足不同客戶的精密拋光需求。 這個系列的產品，生產工藝先進，秉承我公司一貫的質量穩定性，適應各種精密拋光，拋光性能優良，切削率高，並可根據客戶需求進行性能上的調整。'
+            },
+            'RED2625': {
+                title: 'RED2625',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Polishing_Powder_Bowl_r.jpg',
+                subtitle: '紅色精密拋光粉，適用於 TFT 減薄，精密光學，手機蓋板等',
+                content: '我公司新開發了紅粉系列，根據粒度大小共有三個型號，它們均具有出色的拋光性能，能夠滿足不同客戶的精密拋光需求。 這個系列的產品，生產工藝先進，秉承我公司一貫的質量穩定性，適應各種精密拋光，拋光性能優良，切削率高，並可根據客戶需求進行性能上的調整。'
+            },
+        },
+        SD_polishing_fluid: {
+            'D700': {
+                title: 'D700',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_SD_-Polishing_Fluid_-Series.jpg',
+                subtitle: '專為藍玻璃拋光設計的拋光液',
+                content: 'SD700 專為藍玻璃拋光設計的拋光液，藍玻璃是一種磷系或氟磷系軟質玻璃，對強酸強鹼比較敏感，針對藍玻璃的特性，設計了 SD700 氧化鈰基的拋光液，拋光性能優良，拋後玻璃表面質量好，切削率高，懸浮性佳，質量一致性有保證。此產品還可應用於其它光學玻璃和器件的拋光。'
+            },
+            'SD200': {
+                title: 'SD200',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_SD_-Polishing_Fluid_-Series_Dropper.jpg',
+                subtitle: '適用於蓋板玻璃，硬盤玻璃，觸摸屏，光學玻璃等的高性能拋光',
+                content: 'SD200 是針對手機蓋板玻璃、光學玻璃量身定制的一款產品，產品粒徑範圍窄、大顆粒控制嚴格、懸浮性能好，廣泛應用於蓋板玻璃，硬盤玻璃，觸摸屏，光學玻璃等的高性能拋光。'
+            },
+            'SD600': {
+                title: 'SD600',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_SD_-Polishing_Fluid_-Series.jpg',
+                subtitle: '專為藍玻璃拋光設計的拋光液',
+                content: '藍玻璃是一種磷系或氟磷系軟質玻璃，對強酸強鹼比較敏感，針對藍玻璃的特性，設計了 SD600氧化鈰基的拋光液，拋光性能優良，拋後玻璃表面質量好，切削率高，懸浮性佳，質量一致性有保證。 此產品還可應用於其它光學玻璃和器件的拋光。'
+            },
+            'SD800': {
+                title: 'SD800',
+                image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_SD_-Polishing_Fluid_-Series_Dropper.jpg',
+                subtitle: '專為精密光學鏡片拋光設計的拋光液',
+                content: '針對精密光學鏡片的特性，設計了 SD800氧化鋯基的拋光液，拋光性能優良，拋後玻璃表面質量好，切削率高，壽命長，懸浮性佳，質量一致性有保證。此產品還可應用於其它光學玻璃和器件的拋光。'
+            },
+        }
+    }
+
+
+    $('.__single_product_container').hide();
+
+    const isMobile = $(window).width() < 768
+    // handling breadcrumbs
+    const categoryTitle = '拋光粉';
+    const categoryLink = 'products-polishing-powder';
+
+    $( document ).ready(function() {
+        // inserting product description to hidden fields, for translatepress to detect strings
+        const product_list = getProductListOrder();
+        $('#__hidden_translation').html(product_list.map(i => `<p>${i.content}</p>`));
+        
+        const breadcrumbs = `
+            <a href="../products/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${categoryTitle}`
+        const breadcrumbsMobile = `
+            <a href="../${categoryLink}/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${categoryTitle}`
+
+        $("#__product_breadcrumbs").html(isMobile ? breadcrumbsMobile : breadcrumbs);
+
+        checkHash();
+
+    });
+
+    $('.__product_item_title').click(function() {
+        window.location.href = this.id;
+    })
+
+    $(window).on('hashchange', function() {
+        checkHash();
+    });
+
+    function checkHash () {
+
+        const hash_string = window.location.hash.substring(1).split('-');
+        const category = hash_string[0];
+        const product = hash_string[1];
+
+        console.log(category);
+        console.log(product);
+        // console.log(product_list[category]!= undefined);
+        
+
+        if (product && product_list[category] && product_list[category][product]) {
+            ShowProduct(category, product);
+        } else if (product_list[category] != undefined) {
+            FilterCategory(category);
+        } else {
+            FilterCategory('all');
+        }
+
+        $(window).scrollTop(0);
+
+    }
+
+    function FilterCategory (category) {
+        console.log('filtering category ' + category);
+        // hiding single product content
+
+        const isMobile = $(window).width() < 768
+        // console.log(`is mobile ${isMobile}`)
+
+        $('.__single_product_container').hide();
+        // display default page
+        if (category == 'all') {
+            $('.__product_item').show();
+        } else if (!isMobile) { // if desktop, hide product intro 
+            $('.__product_item').hide();
+            $('.__'+category).fadeIn();
+        } else { // if mobile, keep product intro, scroll top category
+            $('.__product_item').fadeIn();
+            // console.log('mobile scrolling')
+            // console.log($('.__'+category).offset().top)
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $('.__'+category).offset().top - 10
+            }, 100);
+        }
+    }
+
+    function ShowProduct (category, product) {
+        // console.log('showing products')
+        $('.__single_product_container').hide();
+        const product_detail = product_list[category][product];
+        console.log(product_detail);
+
+        $('.__product_item').hide();
+
+        // binding product data
+        $('#__single_product_title').html(product_detail.title);
+        $('#__single_product_subtitle').html(product_detail.subtitle);
+        $('#__single_product_content').html(product_detail.content);
+        $("#__single_product_image").attr("src", product_detail.image);
+
+        // const breadcrumbsHTMLMobile = `
+        // <a href="../${categoryLink}/">產品介紹</a> 
+        // <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+        // ${product_detail.title}`
+
+        // $("#__product_breadcrumbs").html(isMobile ? breadcrumbsHTMLMobile : breadcrumbsHTML);
+        if (!isMobile) {
+            const breadcrumbsHTML = `
+            <a href="../products/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            <a href="../${categoryLink}/">${categoryTitle}</a>
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${product_detail.title}`
+            
+            $("#__product_breadcrumbs").html(breadcrumbsHTML);
+        }
+        // $("#__product_breadcrumbs_mobile").html(breadcrumbsHTMLMobile);
+
+        $('.__single_product_container').fadeIn();
+
+        const orders = getProductListOrder();
+        const index = orders.map(i => i.key).indexOf(product);
+        // console.log(index)
+        if (index !== 0) {
+            $('#__single_product-previous').html(`<a class="__single_product_navigation" href="#${orders[index - 1].category}-${orders[index - 1].key}"><i aria-hidden="true" style="vertical-align: middle; font-size: larger;" class="arrow_triangle-left"></i> ${orders[index - 1].title}</a>`);
+        } else {
+            $('#__single_product-previous').html(``);
+        }
+        if (index !== orders.length - 1) {
+            $('#__single_product-next').html(`<a class="__single_product_navigation" href="#${orders[index + 1].category}-${orders[index + 1].key}">${orders[index + 1].title} <i aria-hidden="true" style="vertical-align: middle; font-size: larger;" class="arrow_triangle-right"></i></a>`);
+        } else {
+            $('#__single_product-next').html(``);
+        }
+
+        // scroll to content
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#__single_product_container").offset().top - 80
+        }, 100);
+        
+    }
+
+    function getProductListOrder () {
+        return Object.keys(product_list).map(i => Object.keys(product_list[i]).map(k => ({
+            key: k,
+            category: i,
+            title: product_list[i][k].title || '',
+            content: product_list[i][k].content || '',
+        }))).flatMap(num => num);
+    }
+    console.log(getProductListOrder()) 
+</script>
+
+
+
+__product_item_title
+
+<!-- 
+
+<script>
+    $(".__scroll_anchor").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#__products_main_content").offset().top
+        }, 100);
+        console.log('scroll')
+    });
+</script> -->

@@ -1,0 +1,354 @@
+
+<script>
+    const product_list = {
+            processing_agent: {
+                'W_61': {
+                    title: 'W-61',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '耐鹼型非矽型消泡劑',
+                    content: `特性：非矽型、消泡性，抑泡性、分散性<br>應用：乾膜剝離劑、各類型工程藥劑`
+                },
+                'W_63': {
+                    title: 'W-63',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '非矽型消泡劑',
+                    content: `特性：非矽型、消泡性、抑泡性<br>應用：乾膜剝離劑、各類型工程藥劑`
+                },
+                'CLEAR_Series': {
+                    title: 'CLEAR Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '泛用型洗淨劑',
+                    content: `特性：脫脂性、分散性、金屬螯合性、顆粒去除、防止逆汙染<br>應用：矽晶圓、藍寶石、玻璃、金屬等各類型洗淨劑`
+                },
+                'CLEAN_L_Series': {
+                    title: 'CLEAN L-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '泛用型鹼性洗淨劑',
+                    content: `特性：無機鹼型、脫脂洗淨性、防止逆汙染<br>應用：適合浸泡或超音波清洗各種素材`
+                },
+                'AS_300R': {
+                    title: 'AS-300R',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '泛用型消臭劑',
+                    content: `特性：消臭、腐敗防止<br>應用：汙泥、廢棄物處理場、特定作業工廠`
+                },
+                '600E': {
+                    title: '600E',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '金屬撥水保護劑',
+                    content: `特性：撥水、抗鹽霧性，提升光澤度<br>應用：金屬保護劑、撥水劑、柔軟平滑劑`
+                },
+                '_400': {
+                    title: '400',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '泛用型矽型消泡劑',
+                    content: `特性：矽型、消泡性<br>應用：水性樹脂、排水處理、各類型工程藥劑`
+                },
+                'KF_128': {
+                    title: 'KF-128',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '表面保護劑',
+                    content: `特性：各類基材的密著性佳、提升光澤度<br>應用：塑膠與金屬的保護劑`
+                },
+                'SP_Series': {
+                    title: 'SP-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '泛用型鹼性洗淨劑',
+                    content: `特性：無機鹼型、泛用型、防鏽性、免水洗<br>應用：適合噴洗各種素材 `
+                },
+                'NXH_6022': {
+                    title: 'NXH-6022',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '自己乳化型消泡劑',
+                    content: `特性：自己乳化型、消泡性、抑泡性、耐鹽性<br>應用：染色加工、特殊工程藥劑`
+                },
+            },
+            nonionic_surfactant: {
+                'BK_Series': {
+                    title: 'BK-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '非離子型界面活性劑',
+                    content: `特性：乳化、分散、滲透、消泡、耐酸、耐鹼<br>應用：各類型洗淨劑、工程藥劑`
+                },
+                'P_312': {
+                    title: 'P-312',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '特殊非離子型界面活性劑',
+                    content: `特性：乳化、分散、滲透、耐酸型無機酸抑制劑<br>應用：脫脂劑、各類型洗淨劑、工程藥劑`
+                },
+                'SR_80': {
+                    title: 'SR-80',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '特殊非離子型界面活性劑',
+                    content: `特性：乳化、分散、滲透、耐酸、耐鹼<br>應用：脫脂劑、各類型洗淨劑、工程藥劑`
+                },
+                'SN_10': {
+                    title: 'SN-10',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '滲透消泡劑',
+                    content: `特性：脫氣、滲透、消泡<br>應用：各類型工程藥劑`
+                },
+            },
+            anionic_surfactant: {
+                'DP_0100': {
+                    title: 'DP-0100',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '雙氧水微蝕安定劑',
+                    content: `特性：有效抑制雙氧水分解，延長工程藥劑壽命<br>應用：雙氧水系蝕刻液等工程藥劑`
+                },
+                'NA_30': {
+                    title: 'NA-30',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '耐鹼型滲透劑',
+                    content: `特性：於高鹼性環境下，提供優異的滲透性。<br>應用：乾膜剝離促進劑、各類型鹼性濕式化學品，如洗淨劑、顯影液等`
+                },
+                'A_860': {
+                    title: 'A-860',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '螯合劑',
+                    content: `特性：金屬螯合、分散性、抗腐蝕性、水質安定<br>應用：各類洗淨劑、工程藥劑`
+                },
+                'AC_1100': {
+                    title: 'AC-1100',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '螯合分散劑',
+                    content: `特性：金屬螯合、分散性<br>應用：各類洗淨劑、工程藥劑`
+                },
+                'PEAKLON_350': {
+                    title: 'PEAKLON 350',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '耐酸型滲透劑',
+                    content: `特性：於酸性環境下，提供優異的滲透性<br>應用：各類型洗淨劑、工程藥劑`
+                },
+                'U_852': {
+                    title: 'U-852',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '耐酸型添加劑',
+                    content: `特性：於酸性環境下，提供優異的滲透性<br>應用：各類型洗淨劑、工程藥劑`
+                },
+            },
+            cationic_surfactant: {
+                'LIPO_OIL_Series': {
+                    title: 'LIPO-OIL Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '柔軟平滑劑',
+                    content: `特性：柔軟平滑性、靜電防止<br>應用：紡織加工藥劑、特殊工業用藥劑`
+                },
+                'RB_Series': {
+                    title: 'RB-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '抗菌防臭加工劑',
+                    content: `特性：抗菌、抗病毒、防臭<br>應用：抗菌防臭劑、特殊表面處理、塗料`
+                },
+            },
+            ampholytic_surfactant: {
+                'AMIPOL_Series': {
+                    title: 'AMIPOL Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '靜電防止劑',
+                    content: `特性：靜電防止、平滑柔軟性、分散性<br>應用：分散劑、抗靜電劑、特殊工程藥劑`
+                },
+            },
+            fluorochemical: {
+                'C6DFOH_BF': {
+                    title: 'C6DFOH-BF',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '氟化醇單體',
+                    content: `特性：疏水/疏油、低表面能、低折射率、低介電等<br>應用：塗料、特殊樹脂、防汙塗層`
+                },
+                'C6FMA_BK': {
+                    title: 'C6FMA-BK',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '氟素甲基丙烯酸酯單體',
+                    content: `特性：疏水/疏油、低表面能、低折射率、低介電等<br>應用：塗料、特殊樹脂、防汙塗層`
+                },
+                'PT_Series': {
+                    title: 'PT-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '全氟聚醚氟素聚合物',
+                    content: `特性：低摩擦係數、低表面張力、低蒸氣壓、化學安定性、不燃性<br>應用：真空油、潤滑油、潤滑脂原料、特殊添加劑等`
+                },
+                'AF_Series': {
+                    title: 'AF-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywb.jpg',
+                    subtitle: '指紋防止劑',
+                    content: `特性：低表面能、撥油/撥水性、高水接觸角、易除汙、抗塗鴉、耐摩擦、抗腐蝕<br>應用：指紋防止劑、抗汙塗層處理、特殊表面處理`
+                },
+                'FN_Series': {
+                    title: 'FN-Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_ywr.jpg',
+                    subtitle: '氟素非離子界面活性劑',
+                    content: `特性：低表面能、流平性、濕潤性、滲透性<br>應用：塗料、洗淨劑、防霧劑、離型劑、乳化劑等`
+                },
+            },
+            water_based_polyurethane_dispersions: {
+                'EVAFANOL_Series': {
+                    title: 'EVAFANOL Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '水性聚氨酯樹脂',
+                    content: `特性：無溶劑型、耐水分解性、手感佳、特製化<br>應用：塗料、特殊塗層、粘結劑、印花加工、透溼防水`
+                },
+                'NK_Series': {
+                    title: 'NK Series',
+                    image: 'http://legendtek.tech/wp-content/uploads/2022/10/Legendtek_Specialty_Chemicals_bwg.jpg',
+                    subtitle: '水性樹脂架橋劑',
+                    content: `特性：無溶劑型、耐水分解性、耐久性、性能提升<br>應用：塗料、特殊塗層、各類水性樹脂加工處理劑`
+                },
+            },
+        }
+
+
+    $('.__single_product_container').hide();
+
+    const isMobile = $(window).width() < 768
+    // handling breadcrumbs
+    const categoryTitle = '特殊化學品';
+    const categoryLink = 'specialty-chemicals';
+
+    $( document ).ready(function() {
+        // inserting product description to hidden fields, for translatepress to detect strings
+        const product_list = getProductListOrder();
+        $('#__hidden_translation').html(product_list.map(i => `<p>${i.content}</p>`));
+
+        const breadcrumbs = `
+            <a href="../products/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${categoryTitle}`
+        const breadcrumbsMobile = `
+            <a href="../${categoryLink}/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${categoryTitle}`
+
+        $("#__product_breadcrumbs").html(isMobile ? breadcrumbsMobile : breadcrumbs);
+
+        $('.__product_item_title').click(function() {
+            window.location.href = this.id;
+        })
+        
+        checkHash();
+    });
+
+    $(window).on('hashchange', function() {
+        checkHash();
+    });
+
+    function checkHash () {
+
+        const hash_string = window.location.hash.substring(1).split('-');
+        const category = hash_string[0];
+        const product = hash_string[1];
+
+        console.log(category);
+        console.log(product);
+        // console.log(product_list[category]!= undefined);
+        
+
+        if (product && product_list[category] && product_list[category][product]) {
+            ShowProduct(category, product);
+        } else if (product_list[category] != undefined) {
+            FilterCategory(category);
+        } else {
+            FilterCategory('all');
+        }
+
+        $(window).scrollTop(0);
+
+    }
+
+    function FilterCategory (category) {
+        console.log('filtering category ' + category);
+        // hiding single product content
+
+        const isMobile = $(window).width() < 768
+        console.log(`is mobile ${isMobile}`)
+
+        $('.__single_product_container').hide();
+        // display default page
+        if (category == 'all') {
+            $('.__product_item').show();
+        } else if (!isMobile) { // if desktop, hide product intro 
+            $('.__product_item').hide();
+            $('.__'+category).fadeIn();
+        } else { // if mobile, keep product intro, scroll top category
+            $('.__product_item').fadeIn();
+            // console.log('mobile scrolling')
+            // console.log($('.__'+category).offset().top)
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $('.__'+category).offset().top - 10
+            }, 100);
+        }
+    }
+
+    function ShowProduct (category, product) {
+        // console.log('showing products')
+        $('.__single_product_container').hide();
+        const product_detail = product_list[category][product];
+        console.log(product_detail);
+
+        $('.__product_item').hide();
+
+        // binding product data
+        $('#__single_product_title').html(product_detail.title);
+        $('#__single_product_subtitle').html(product_detail.subtitle);
+        $('#__single_product_content').html(product_detail.content);
+        $("#__single_product_image").attr("src", product_detail.image);
+
+        if (!isMobile) {
+            const breadcrumbsHTML = `
+            <a href="../products/">產品介紹</a> 
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            <a href="../${categoryLink}/">${categoryTitle}</a>
+            <i aria-hidden="true" style="vertical-align: unset; font-size: smaller;" class="icon icon-right-arrow1"></i> 
+            ${product_detail.title}`
+            
+            $("#__product_breadcrumbs").html(breadcrumbsHTML);
+        }
+
+        $('.__single_product_container').fadeIn();
+
+        const orders = getProductListOrder();
+        const index = orders.map(i => i.key).indexOf(product);
+        // console.log(index)
+        if (index !== 0) {
+            $('#__single_product-previous').html(`<a class="__single_product_navigation" href="#${orders[index - 1].category}-${orders[index - 1].key}"><i aria-hidden="true" style="vertical-align: middle; font-size: larger;" class="arrow_triangle-left"></i> ${orders[index - 1].title}</a>`);
+        } else {
+            $('#__single_product-previous').html(``);
+        }
+        if (index !== orders.length - 1) {
+            $('#__single_product-next').html(`<a class="__single_product_navigation" href="#${orders[index + 1].category}-${orders[index + 1].key}">${orders[index + 1].title} <i aria-hidden="true" style="vertical-align: middle; font-size: larger;" class="arrow_triangle-right"></i></a>`);
+        } else {
+            $('#__single_product-next').html(``);
+        }
+
+        // scroll to content
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#__single_product_container").offset().top - 80
+        }, 100);
+        
+    }
+
+    function getProductListOrder () {
+        return Object.keys(product_list).map(i => Object.keys(product_list[i]).map(k => ({
+            key: k,
+            category: i,
+            title: product_list[i][k].title || '',
+            content: product_list[i][k].content || '',
+        }))).flatMap(num => num);
+    }
+    console.log(getProductListOrder()) 
+</script>
+
+
+
+<!-- 
+
+<script>
+    $(".__scroll_anchor").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#__products_main_content").offset().top
+        }, 100);
+        console.log('scroll')
+    });
+</script> -->
+
+<meta name="google-site-verification" content="-TVDZEQhpG3HQYKEauhXMsAYKxnbWwyXFgB3uxSB1n4" />

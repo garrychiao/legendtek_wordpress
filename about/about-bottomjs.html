@@ -1,0 +1,27 @@
+
+<script>
+    
+    $( document ).ready(function() {
+        checkHash();
+    });
+
+    $(window).on('hashchange', function() {
+        checkHash();
+    });
+
+    function checkHash () {
+        const hash_string = window.location.hash.substring(1).replace('/', '');
+        console.log(hash_string)
+        const anchor_list = ['about_philosophy', 'about_idea', 'about_type', 'about_image', 'about_policy']
+       
+        // scroll to content
+        if (anchor_list.indexOf(hash_string) > -1) {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(`#__${hash_string}`).offset().top - 50
+            }, 100);
+        } else {
+            $(window).scrollTop(0);
+        }
+    }
+
+</script>
